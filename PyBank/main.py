@@ -28,7 +28,6 @@ with open(filepath, 'r') as file:
     
     for i in dframe:
         amount = int(i[1])
-        total = total + amount
         tlist.append(amount)
         total = sum(tlist)
         total2 = '${}'.format(total)
